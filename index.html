@@ -43,7 +43,12 @@
     
     <main class="contenedor">
             <figure class="imagen sobre-festival">
-                <img src="build/img/imagen_vocalista.webp"  alt="imagen vocalista festival">
+                <picture>
+                    <!-- si no soporta webp pasa a jpg -->
+                    <source srcset="build/img/avif/imagen_vocalista.avif" type="image/avif">
+                    <source srcset="build/img/webp/imagen_vocalista.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/webp/imagen_vocalista.webp" alt="imagen vocalita">
+                </picture>
                 <figcaption class="contenido-festival">
                     <h2>Rock & EDM Festival</h2>
                     <p class="fecha">julio 2022, Panamá, Ciudad de Panamá</p>
