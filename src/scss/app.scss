@@ -1,9 +1,6 @@
 // @import 'base/variables'; // primera forma
 // @import 'contenido/contenido'
 
-
-
-
-body{
-    background-color: $rojo;
-}
+// nueva forma
+@use 'base';
+@use 'layout';
