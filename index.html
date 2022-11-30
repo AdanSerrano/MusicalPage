@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" />    <title>Rock & EDM Festival</title>
+    <meta name="viewport" content="width=device-width, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" />    <title>Rock & EDM Festival</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="Preload" href="build/img/live-music.avif" as="icon">
+    <link rel="icon" type="image/x-icon" href="build/img/live-music.webp">
 </head>
 <body>
     <header class="header">
@@ -23,6 +25,8 @@
         </section>
     </header>
 
+    <!-- header -->
+
     <section class="video">
         <section class="overlay">
             <article class="contenedor contenido-video">
@@ -35,7 +39,25 @@
             <source src="video/concierto.webm" type="video/webm">
         </video>
     </section>
+    <!-- video -->
     
+    <main class="contenedor">
+            <figure class="imagen sobre-festival">
+                <picture>
+                    <!-- si no soporta webp pasa a jpg -->
+                    <source srcset="build/img/avif/imagen_vocalista.avif" type="image/avif">
+                    <source srcset="build/img/webp/imagen_vocalista.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/webp/imagen_vocalista.webp" alt="imagen vocalita">
+                </picture>
+                <figcaption class="contenido-festival">
+                    <h2>Rock & EDM Festival</h2>
+                    <p class="fecha">julio 2022, Panamá, Ciudad de Panamá</p>
+                    <p >El mejor festival de Rock y EDM de Panamá. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sequi quidem et numquam nulla, beatae vel 
+                    impe</p>
+                </figcaption>
+            </figure>
+    </main>
+    <!-- contendido principal -->
 
 
 
