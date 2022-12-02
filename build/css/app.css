@@ -655,3 +655,64 @@ img {
 .boton-cerrar:hover {
   cursor: pointer;
 }
+
+.boletos {
+  padding: 5rem 0;
+}
+.boletos h3 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .boletos .contenedor-boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase {
+  color: #000000;
+}
+.pase .nombre-pase {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.pase-header, .pase-footer {
+  padding: 2rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pase-header {
+  background-color: #f53756;
+}
+.pase-header p {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.pase-body {
+  background-color: #FFFFFF;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li, .pase-body ul :nth-child(odd) {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pase-footer {
+  background-color: #752f97;
+}
+.pase-footer p {
+  font-size: 2rem;
+  font-weight: 700;
+}
