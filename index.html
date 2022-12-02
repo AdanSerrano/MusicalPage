@@ -17,9 +17,9 @@
             <h1>Rock & EDM Festival</h1>
 
             <nav class="navegacion-principal">
-                <a href="">Line Up</a>
-                <a href="">Galeria</a>
-                <a href="">Boletos</a>
+                <a href="#lineUp">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </section>
     </header>
@@ -58,11 +58,9 @@
             </figure>
         </section>
         <!-- sobre festival -->
-        <section class="lineup">
+        <section id="lineUp" class="lineup">
             <h3>LineUp</h3>
-            
             <p class="dia">Viernes 24</p>
-
             <article class="escenario-contenedor contenedor">
                 <article class="escenario rock bg-amarillo">
                     <p class="nombre-escenario">Escenario rock</p>
@@ -175,18 +173,18 @@
             <!--.escenario-contenedor-->
         </section>
         <!-- dias de eventos -->
-
-
-        <section class="galeria contenedor">
+        <section id="galeria" class="galeria contenedor">
             <h3>Galeria</h3>
             
             <ul class="galeria-imagenes">
 
             </ul>
-        </section>
+        </section> <!--Galeria-->
     </main>
     <!-- contendido principal -->
-    <aside class="boletos bg-verde">
+
+
+    <aside id="boletos" class="boletos bg-verde">
         <h3>Boletos</h3>
         <section class="contenedor contenedor-boletos">
             <article class="basico pase">
@@ -223,8 +221,11 @@
             </article>
         </section>
     </aside>
+    <!-- boletos finish -->
 
-
+    <footer class="footer">
+        <p>Rock & EDM Festival. Todos Los derechos reservados</p>
+    </footer>
 
     <script src="build/js/app.js"></script>
 </body>

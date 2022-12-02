@@ -353,6 +353,9 @@ body {
 body.fijar-clase {
   overflow: hidden;
 }
+body.body-scroll {
+  padding-top: 86px;
+}
 
 p {
   font-size: 2rem;
@@ -395,6 +398,15 @@ img {
 
 .header {
   background-color: #4cb8b3;
+}
+@media (min-width: 768px) {
+  .header.fijo {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+  }
 }
 .header h1 {
   color: #FFFFFF;
@@ -715,4 +727,14 @@ img {
 .pase-footer p {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.footer {
+  background-color: #f53756;
+  padding: 3rem;
+}
+.footer p {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
 }

@@ -4,8 +4,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function iniciarApp() {
   crearGaleria();
+  scrollNav();
+  navegacionFija();
 }
 
+// scroll header
+function navegacionFija() {
+  const barra = document.querySelector(".header");
+  const sobreFestival = document.querySelector(".sobre-festival");
+  
+  //solucion de espacio que ocupa la posicion fija del header
+  const body = document.querySelector('body');
+
+  window.addEventListener('scroll', function () {
+    if (sobreFestival.getBoundingClientRect().bottom < 0) {
+      barra.classList.add("fijo");
+      body.classList.add("body-scroll");
+    } else {
+      barra.classList.remove("fijo");
+      body.classList.remove("body-scroll");
+    }
+  });
+}
+
+//scroll navegable 
+function scrollNav() {
+  const enlaces = document.querySelectorAll(".navegacion-principal");
+  
+  enlaces.forEach(enlace => {
+    enlace.addEventListener('click', function (e) {
+      e.preventDefault();
+      const seccionScroll = e.target.attributes.href.value;
+      const seccion = document.querySelector(seccionScroll);
+      seccion.scrollIntoView({ behavior: "smooth" });
+
+    });
+  })
+}
+
+//crear galeria
 function crearGaleria() {
   const galeria = document.querySelector(".galeria-imagenes");
 
@@ -39,6 +76,7 @@ function mostrarImagen(id) {
   overlay.onclick = function () {
     // añade al html
     const body = document.querySelector("body");
+    // cuando estamos antes de darle click a alguna imagen remueve la clase de fijar
     body.classList.remove("fijar-clase");
     overlay.remove();
   };
@@ -50,6 +88,7 @@ function mostrarImagen(id) {
   cerrarModal.onclick = function () {
     // añade al html
     const body = document.querySelector("body");
+    // cuando estamos en la pantalla para cerrar la ventana agrega la clase de fijary no pueda dar escroll
     body.classList.add("fijar-clase");
     overlay.remove();
   };
