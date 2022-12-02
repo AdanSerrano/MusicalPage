@@ -17,9 +17,9 @@
             <h1>Rock & EDM Festival</h1>
 
             <nav class="navegacion-principal">
-                <a href="">Line Up</a>
-                <a href="">Galeria</a>
-                <a href="">Boletos</a>
+                <a href="#lineUp">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </section>
     </header>
@@ -58,11 +58,9 @@
             </figure>
         </section>
         <!-- sobre festival -->
-        <section class="lineup">
+        <section id="lineUp" class="lineup">
             <h3>LineUp</h3>
-            
             <p class="dia">Viernes 24</p>
-
             <article class="escenario-contenedor contenedor">
                 <article class="escenario rock bg-amarillo">
                     <p class="nombre-escenario">Escenario rock</p>
@@ -175,21 +173,59 @@
             <!--.escenario-contenedor-->
         </section>
         <!-- dias de eventos -->
-
-
-        <section class="galeria contenedor">
+        <section id="galeria" class="galeria contenedor">
             <h3>Galeria</h3>
             
             <ul class="galeria-imagenes">
 
             </ul>
-        </section>
-
-
+        </section> <!--Galeria-->
     </main>
     <!-- contendido principal -->
 
 
+    <aside id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+        <section class="contenedor contenedor-boletos">
+            <article class="basico pase">
+                <p class="nombre-pase">Pase 1 Dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <section class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenario</li>
+                        <li>Comidas y Bebidas</li>
+                    </ul>
+                </section>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </article>
+            <article class="primiun pase">
+                <p class="nombre-pase">Pase 2 Dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <section class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenario</li>
+                        <li>Comidas y Bebidas</li>
+                        <li>Camisas del evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </section>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </article>
+        </section>
+    </aside>
+    <!-- boletos finish -->
+
+    <footer class="footer">
+        <p>Rock & EDM Festival. Todos Los derechos reservados</p>
+    </footer>
 
     <script src="build/js/app.js"></script>
 </body>
